@@ -91,3 +91,41 @@
 	height: 300px;
 	background-color: #f1f1f1;
 }
+.home_map {
+	margin-top:70px;
+	background-image: url("../images/map.png");
+	background-position: center; 
+	background-repeat: no-repeat;
+	height:356px;
+}
+.main_choice {
+	margin-top:100px;
+	
+}
+.main_choice h2{
+	position:absolute;
+	display:inline;
+	left:615px;
+	bottom:-280px;
+}
+.main_choice section{
+	position:relative;
+	display:inline-block;
+	width:250px;
+	left:380px;
+	
+}
+.choice1{
+	background-image: url("../images/reciever.png");
+	background-position: left; 
+	background-repeat: no-repeat;
+	height:167px;
+	width:174px;
+}
+.choice2{
+	background-image: url("../images/sender.png");
+	background-position: right; 
+	background-repeat: no-repeat;
+	height:167px;
+	width:174px;
+}
