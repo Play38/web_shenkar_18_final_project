@@ -22,7 +22,15 @@
 	font-size:35px;
 	right:30px;
 }
-
+.greet{
+	padding-top: 100px;
+	text-align: center;
+}
+.mapZone{
+	background-image: url(.../images/MAP.PNG);
+	width: 347px;
+	height: 356px;
+}
 @media only screen and (max-width: 480px) {
 	.logo{
 	
