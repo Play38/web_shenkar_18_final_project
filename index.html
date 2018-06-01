@@ -5,50 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Omer and Ofir</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.js"
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="includes/style.css" />
     <script src="includes/main.js"></script>
 </head>
 <body>
-    <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-overide">
-            <a class="navbar-brand" href="#">Fetcher</a>
-            <button class="navbar-toggler" type="button" >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <a class="nav-link" href="#">
-            <i class="fa fa-meetup" ></i>Home
-            <span class="sr-only">(current)</span>
-            </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">
-            <i class="fa fa-meetup" ></i>Features</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">
-            <i class="fa fa-link" ></i>Pricing</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">
-            <i class="fa fa-link" ></i>About</a>
-            </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" >
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            </div>
-           
-            </nav>
-           </header>
+
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+                
     <div id="wrapper" class="container-fluid">
-                   
+            <h2>Animated Sidenav Example Full Width</h2>
+            <p>Click on the element below to open the navigation menu.</p>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
