@@ -1,16 +1,16 @@
-.nav 
+.header_mobile
 {
 	position:relative;
 	background-color:#e6e6e6;
 	height:106px;
-	width:100%;
-	
+	width:100%;	
 }
 
 .bar{
 	position:absolute;
 	line-height:106px;
 	font-size:35px;
+	left:30px;
 }
 .logo{
 	position:absolute;
