@@ -31,7 +31,7 @@
 	height: 100px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 	.logo{
 	
 		position:absolute;
@@ -142,11 +142,17 @@
 	background-position: center; 
 	background-repeat: no-repeat;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 12px;}
   .menu_box{
 	  top: 247px;
+  }
+  .textMain2 {
+	visibility: hidden;
+  }
+  .textMain2 p h5{
+	visibility: hidden;
   }
 }
 .bigBox{
