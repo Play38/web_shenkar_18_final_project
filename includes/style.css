@@ -145,6 +145,9 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .menu_box{
+	  top: 247px;
+  }
 }
 .bigBox{
 	position: relative;
