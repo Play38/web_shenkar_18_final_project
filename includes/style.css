@@ -106,9 +106,9 @@
 	
 }
 .main_choice h2{
-	position:absolute;
-	left:330px;
-	top:60px;
+	position:relative;
+	text-align:center;
+	bottom:100px;
 	
 }
 .main_choice a{
@@ -131,6 +131,6 @@
 	background-repeat: no-repeat;
 	height:167px;
 	width:174px;
-	bottom:165px;
+	bottom:209px;
 	left:150px;
 }
