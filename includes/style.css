@@ -99,20 +99,22 @@
 	height:356px;
 }
 .main_choice {
+	position:relative;
 	margin-top:100px;
+	width:100%;
+	
 	
 }
 .main_choice h2{
 	position:absolute;
-	display:inline;
-	left:615px;
-	bottom:-280px;
+	left:330px;
+	top:60px;
+	
 }
-.main_choice section{
+.main_choice a{
+	display:block;
 	position:relative;
-	display:inline-block;
-	width:250px;
-	left:380px;
+	
 	
 }
 .choice1{
@@ -121,6 +123,7 @@
 	background-repeat: no-repeat;
 	height:167px;
 	width:174px;
+	right:150px;
 }
 .choice2{
 	background-image: url("../images/sender.png");
@@ -128,4 +131,6 @@
 	background-repeat: no-repeat;
 	height:167px;
 	width:174px;
+	bottom:165px;
+	left:150px;
 }
