@@ -142,7 +142,7 @@
 	background-position: center; 
 	background-repeat: no-repeat;
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 480px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
   .menu_box{
