@@ -19,6 +19,18 @@
 	line-height:106px;
 	font-size:30px;
 }
+.home {
+	position:absolute;
+	left:30px;
+	line-height:106px;
+	font-size:35px;
+	
+}
+.home a {color:#000000;}
+.home a:hover {
+	 text-decoration: none;
+	 color:#000000;
+}
 .bread {
 	text-align:center;
 	color:#737373;
