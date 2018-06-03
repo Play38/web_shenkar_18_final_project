@@ -21,11 +21,13 @@
 }
 .bread {
 	text-align:center;
+	color:#737373;
 	padding-top:70px;
 }
-.breadGray {
+.breadSelect{
 	display:inline;
-	color:#737373;}
+	color:#000000;
+	}
 .bar{
 	position:absolute;
 	line-height:106px;
