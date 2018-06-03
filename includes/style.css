@@ -210,7 +210,6 @@
 	position:relative;
 	background-color:#f7f6f6;
 	height:67px;
-	display: block;
 	text-align:center;
 	line-height:67px;
 	font-size:20px;
@@ -220,13 +219,13 @@
 	height:100px;
 	border: 1px solid #cccccc;
 	border-top:0px;
-	text-align:center;
+	text-align:right;
 	line-height:100px;
 }
 .mainSplice label{
-	float: right;
 	width: 300px;
 	margin-right: 7.5%;
+	text-align: justify;
 }
 .mainSplice select{
 	margin-right:30px;
@@ -245,6 +244,56 @@
     width:190px;
     text-align:center;
     line-height:65px;
-    top:250px;
+	left:15%;
+	top: 350px;
+}
+/*------------------*/
+.smallLineHieght{
+	line-height: 30px;
+
+}
+.mainSplice p{
+	margin-right: 7.5%;;
+}
+.imgSplice {
+	position:relative;
+	height:400px;
+	border: 1px solid #cccccc;
+	border-top:0px;
+	text-align:right;
+	line-height:100px;
+}
+.ok{
+	top: 50px;
+	display:block;
+	position:relative;
+	background-color:#00FF00;
+	border: 2px solid none;
+    border-radius: 5px;
+    height:65px;
+    width:190px;
+    text-align:center;
+    line-height:65px;
     left:10%;
+}
+.ok, .ok:hover{
+	color:#000000;
+	text-decoration:none;
+}
+.prev{
+	top: 730px;
+	display:block;
+	position: absolute;
+	background-color:#e5e5ea;
+	border: 2px solid none;
+    border-radius: 5px;
+    height:65px;
+    width:190px;
+    text-align:center;
+    line-height:65px;
+    left:80%;
+}
+.prev, .prev:hover{
+	color:#000000;
+	text-decoration:none;
 }
