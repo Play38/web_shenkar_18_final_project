@@ -177,6 +177,9 @@
 	font-size:35px;
 	left:30px;
 }
+.home{
+	visibility: hidden;
+}
 }
 .bigBox{
 	position: relative;
