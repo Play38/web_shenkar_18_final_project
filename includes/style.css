@@ -236,7 +236,7 @@
 }
 .next {
 	display:block;
-	position:relative;
+	position: absolute;;
 	background-color:#e5e5ea;
 	border: 2px solid none;
     border-radius: 5px;
@@ -245,7 +245,7 @@
     text-align:center;
     line-height:65px;
 	left:10%;
-	top: 350px;
+	top: 720px;
 }
 /********/
 .mapPic{
@@ -298,7 +298,7 @@
 	text-decoration:none;
 }
 .prev{
-	top: 730px;
+	top: 720px;
 	display:block;
 	position: absolute;
 	background-color:#e5e5ea;
