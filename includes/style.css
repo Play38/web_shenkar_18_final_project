@@ -381,8 +381,7 @@
   
   .active{
 	background-color: #ccc;
-  }
-  
+  } 
   .content {
 	padding: 0 18px;
 	display: none;
@@ -393,3 +392,15 @@
 	width: 400px;
 	height: 400px;
   }
+.menPic {
+	background-image:url("../images/men.png");
+	background-repeat: no-repeat;
+	background-position:right;
+	padding-right:50px;
+}
+.womenPic {
+	background-image:url("../images/women.png");
+	background-repeat: no-repeat;
+	background-position:right;
+	padding-right:50px;
+}
