@@ -317,3 +317,11 @@
 .imgSplice p{
 	margin-right: 7.5%
 }
+@media screen and (max-width: 580px) {
+	.next , .ok{
+		left: 2%
+	}
+	.prev{
+		left:60%;
+	}
+  }
