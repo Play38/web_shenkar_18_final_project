@@ -247,6 +247,23 @@
 	left:10%;
 	top: 350px;
 }
+/********/
+.mapPic{
+	position:relative;
+	background-image: url("../images/serachMap.png");
+	background-repeat: no-repeat;
+	height:446px;
+	width:401px;
+	top:50px;
+}
+.rangeWidth{
+	position:relative;
+	width:400px;
+	margin-top:5px;
+}
+.rangeCenter {text-align:center}
+
+
 /*------------------*/
 .smallLineHieght{
 	line-height: 30px;
