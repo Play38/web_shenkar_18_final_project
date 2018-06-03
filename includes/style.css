@@ -421,8 +421,30 @@
 	padding-right:30px;
 	padding-top:10px;
 }
-.contentBox div{
+.contentBox .symbol{
 	position:absolute;
 	top:38px;
 	right:3px;
+}
+.textInBox1 {
+	position:absolute;
+	right:38px;
+	top:35px;
+}
+.textInBox2 {
+	position:absolute;
+	right:40px;
+	top:25px;
+}
+.textInBoxApprove {
+	position:absolute;
+	right:75px;
+	top:35px;
+}
+.NIS {
+	position:absolute;
+	top:32px;
+	right:0px;
+	padding-right:3px;
+	font-size:30px;
 }
