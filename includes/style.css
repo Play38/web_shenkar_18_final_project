@@ -361,8 +361,26 @@
 	border: 1px solid black;
 	text-align: right;
 	font-size: 25px;
+	padding: 5px;
 }
 .customerList{
 	position: relative;
-	top:50%;
+	top:200px;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
