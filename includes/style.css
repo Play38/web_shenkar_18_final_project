@@ -409,9 +409,20 @@
 	padding-right:50px;
 }
 .contentBox{
+	position:relative;
 	border: solid;
 	float: right;
 	width: 200px;
 	height: 100px;;
 	text-align: right;
+	line-height:20px;
+}
+.contentBox p{
+	padding-right:30px;
+	padding-top:10px;
+}
+.contentBox div{
+	position:absolute;
+	top:38px;
+	right:3px;
 }
