@@ -154,6 +154,9 @@
   .textMain2 p h5{
 	visibility: hidden;
   }
+  .sidenav .closebtn{
+	  right: 2px;
+  }
 }
 .bigBox{
 	position: relative;
