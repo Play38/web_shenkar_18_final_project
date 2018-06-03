@@ -325,3 +325,11 @@
 	width:335px;
 	top:-45px;
 }
+@media screen and (max-width: 580px) {
+	.prev{
+		left:60%;
+	}
+	.next, .ok{
+		left:2%;
+	}
+}
