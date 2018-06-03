@@ -1,3 +1,10 @@
+function openNav() {
+    document.getElementById("mySidenav").style.width = "33%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -12,11 +19,4 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-function openNav() {
-    document.getElementById("mySidenav").style.width = "33%";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
 }
