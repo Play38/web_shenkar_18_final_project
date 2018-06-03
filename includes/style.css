@@ -30,23 +30,6 @@
 	width: 31px;
 	height: 100px;
 }
-
-@media only screen and (max-width: 600px) {
-	.logo{
-	
-		position:absolute;
-		right:30px;
-		line-height:106px;
-		font-size:30px;
-	}
-	.bar{
-		position:absolute;
-		line-height:106px;
-		font-size:35px;
-		left:30px;
-	}
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -142,7 +125,7 @@
 	background-position: center; 
 	background-repeat: no-repeat;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 580px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 12px;}
   .menu_box{
@@ -157,6 +140,19 @@
   .sidenav .closebtn{
 	  right: 2px;
   }
+  .logo{
+	
+	position:absolute;
+	right:30px;
+	line-height:106px;
+	font-size:30px;
+}
+.bar{
+	position:absolute;
+	line-height:106px;
+	font-size:35px;
+	left:30px;
+}
 }
 .bigBox{
 	position: relative;
