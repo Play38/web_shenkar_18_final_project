@@ -19,6 +19,13 @@
 	line-height:106px;
 	font-size:30px;
 }
+.bread {
+	text-align:center;
+	padding-top:70px;
+}
+.breadGray {
+	display:inline;
+	color:#737373;}
 .bar{
 	position:absolute;
 	line-height:106px;
