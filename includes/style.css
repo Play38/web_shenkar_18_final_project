@@ -223,9 +223,9 @@
 	line-height:100px;
 }
 .mainSplice label{
-	width: 300px;
+	width: 500px;
 	margin-right: 7.5%;
-	text-align: justify;
+	text-align: right;
 }
 .mainSplice select{
 	margin-right:30px;
@@ -244,7 +244,7 @@
     width:190px;
     text-align:center;
     line-height:65px;
-	left:15%;
+	left:10%;
 	top: 350px;
 }
 /*------------------*/
