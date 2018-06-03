@@ -317,6 +317,7 @@
 .imgSplice p{
 	margin-right: 7.5%
 }
+<<<<<<< HEAD
 .mapPic2{
 	position:relative;
 	background-image: url("../images/serachMap2.png");
@@ -325,3 +326,13 @@
 	width:335px;
 	top:-45px;
 }
+=======
+@media screen and (max-width: 580px) {
+	.next , .ok{
+		left: 2%
+	}
+	.prev{
+		left:60%;
+	}
+  }
+>>>>>>> ce0c2c96a86cd5ea715423b27d8579982e5d4983
