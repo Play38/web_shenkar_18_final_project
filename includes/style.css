@@ -251,6 +251,9 @@
 	color:#000000;
 	text-decoration:none;
 }
+.labelAdj {
+	padding-right:12px;
+}
 .next {
 	display:block;
 	position: absolute;
