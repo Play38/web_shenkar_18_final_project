@@ -269,13 +269,13 @@
 	position:relative;
 	background-image: url("../images/serachMap.png");
 	background-repeat: no-repeat;
-	height:397px;
-	width:446px;
+	height:298px;
+	width:335px;
 	top:20px;
 }
 .rangeWidth {
 	position:relative;
-	width:446px;
+	width:335px;
 	margin-top:20px;
 }
 .rangeCenter {text-align:center}
