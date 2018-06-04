@@ -443,8 +443,13 @@
 }
 .textInBoxApprove {
 	position:absolute;
-	right:75px;
+	right:45px;
 	top:35px;
+	font-size: 50px;
+}
+.textInBoxApprove a, a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 .NIS {
 	position:absolute;
@@ -452,4 +457,8 @@
 	right:0px;
 	padding-right:3px;
 	font-size:30px;
+}
+.approve{
+	background-color: green;
+
 }
