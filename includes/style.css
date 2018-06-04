@@ -3,17 +3,14 @@
 	padding: 0px;
 	font-family: 'Alef', sans-serif;
 }
-#clear{
-	clear: both;
-}
-.header_mobile
-{
+#clear{clear: both;}
+.header_mobile {
 	position:relative;
 	background-color:#e6e6e6;
 	height:106px;
 	width:100%;	
 }
-.logo{
+.logo {
 	position:absolute;
 	right:90px;
 	line-height:106px;
@@ -36,21 +33,21 @@
 	color:#737373;
 	padding-top:70px;
 }
-.breadSelect{
+.breadSelect {
 	display:inline;
 	color:#000000;
-	}
-.bar{
+}
+.bar {
 	position:absolute;
 	line-height:106px;
 	font-size:35px;
 	right:30px;
 }
-.greet{
+.greet {
 	padding-top: 50px;
 	text-align: center;
 }
-.hamburger{
+.hamburger {
 	width: 31px;
 	height: 100px;
 }
@@ -66,7 +63,6 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -76,7 +72,6 @@
 	transition: 0.3s;
 	text-align: left;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -91,16 +86,14 @@
 	background-color: #929292;
 	top:0px;
 }
-.textMain{
+.textMain {
 	position:relative;
 	line-height:10px;
 	width: 83px;
 	top:30px;
 }
-.top_nav_box p{
-	text-align: center;
-}
-.middle_nav_box{
+.top_nav_box p {text-align: center;}
+.middle_nav_box {
 	position:absolute;
 	width:100%;
 	height:74px;
@@ -116,14 +109,14 @@
 	width:249px;
 }
 .textMain2 h5 {display:inline;}
-.menu_box{
-	position: relative;;
+.menu_box {
+	position: relative;
 	width:100%;
 	height:70px;
 	border: solid #929292 1px;
 	top:204px;
 }
-.whiteCircle{
+.whiteCircle {
 	position:relative;
 	top:5px;
 	width: 83px;
@@ -150,41 +143,31 @@
 	background-repeat: no-repeat;
 }
 @media screen and (max-width: 580px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 12px;}
-  .menu_box{
-	  top: 247px;
-  }
-  .textMain2 {
-	visibility: hidden;
-  }
-  .textMain2 p h5{
-	visibility: hidden;
-  }
-  .sidenav .closebtn{
-	  right: 2px;
-  }
-  .logo{
-	position:absolute;
-	right:30px;
-	line-height:106px;
-	font-size:30px;
+  	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 12px;}
+  	.menu_box {top: 247px;}
+  	.textMain2 {visibility: hidden;}
+  	.textMain2 p h5{visibility: hidden;}
+  	.sidenav .closebtn{right: 2px;}
+  	.logo {
+		position:absolute;
+		right:30px;
+		line-height:106px;
+		font-size:30px;
+	}
+	.bar {
+		position:absolute;
+		line-height:106px;
+		font-size:35px;
+		left:30px;
+	}
+	.home{visibility: hidden;}
+	.whiteCircle {
+		width: 60px;
+		height: 60px;
+	}
 }
-.bar{
-	position:absolute;
-	line-height:106px;
-	font-size:35px;
-	left:30px;
-}
-.home{
-	visibility: hidden;
-}
-.whiteCircle{
-	width: 60px;
-	height: 60px;
-}
-}
-.bigBox{
+.bigBox {
 	position: relative;
 	width: 100%;
 	height: 300px;
@@ -226,7 +209,7 @@
 	background-position:center top;
 	left:90px;
 }
-.main_choice{
+.main_choice {
 	position:relative;
 	height:100px;
 	width:50px;
@@ -239,7 +222,7 @@
 	top:25px;
 }
 /*------------------*/
-.grayArea{
+.grayArea {
 	position:relative;
 	background-color:#f7f6f6;
 	height:67px;
@@ -255,7 +238,7 @@
 	text-align:right;
 	line-height:100px;
 }
-.mainSplice label{
+.mainSplice label {
 	position: absolute;
 	width: 500px;
 	right: 7.5%;
@@ -264,13 +247,13 @@
 .mainSplice select{
 	margin-right:30px;
 }
-.next, .next:hover{
+.next, .next:hover {
 	color:#000000;
 	text-decoration:none;
 }
 .next {
 	display:block;
-	position: absolute;;
+	position: absolute;
 	background-color:#e5e5ea;
 	border: 2px solid none;
     border-radius: 5px;
@@ -282,7 +265,7 @@
 	top: 90%;
 }
 /********/
-.mapPic{
+.mapPic {
 	position:relative;
 	background-image: url("../images/serachMap.png");
 	background-repeat: no-repeat;
@@ -290,7 +273,7 @@
 	width:446px;
 	top:20px;
 }
-.rangeWidth{
+.rangeWidth {
 	position:relative;
 	width:446px;
 	margin-top:20px;
@@ -299,13 +282,8 @@
 
 
 /*------------------*/
-.smallLineHieght{
-	line-height: 30px;
-
-}
-.mainSplice p{
-	margin-right: 7.5%;;
-}
+.smallLineHieght {line-height: 30px;}
+.mainSplice p {margin-right: 7.5%;}
 .imgSplice {
 	position:relative;
 	height:350px;
@@ -314,10 +292,10 @@
 	text-align:right;
 	line-height:50px;
 }
-.ok{
+.ok {
 	top: 90%;
 	display:block;
-	position: absolute;;
+	position: absolute;
 	background-color:#00FF00;
 	border: 2px solid none;
     border-radius: 5px;
@@ -327,11 +305,11 @@
     line-height:65px;
     left:10%;
 }
-.ok, .ok:hover{
+.ok, .ok:hover {
 	color:#000000;
 	text-decoration:none;
 }
-.prev{
+.prev {
 	top: 90%;
 	display:block;
 	position: absolute;
@@ -344,14 +322,12 @@
     line-height:65px;
     left:70%;
 }
-.prev, .prev:hover{
+.prev, .prev:hover {
 	color:#000000;
 	text-decoration:none;
 }
-.imgSplice p{
-	margin-right: 7.5%
-}
-.mapPic2{
+.imgSplice p{margin-right: 7.5%;}
+.mapPic2 {
 	position:relative;
 	background-image: url("../images/serachMap2.png");
 	background-repeat: no-repeat;
@@ -360,21 +336,17 @@
 	top:-25px;
 }
 @media screen and (max-width: 580px) {
-	.prev{
-		left:50%;
-	}
-	.next, .ok{
-		left:2%;
-	}
+	.prev {left:50%;}
+	.next, .ok {left:2%;}
 }
 /*------------------*/
-.customerList, th, td{
+.customerList, th, td {
 	border: 1px solid black;
 	text-align: right;
 	font-size: 25px;
 	padding: 5px;
 }
-.customerList{
+.customerList {
 	position: relative;
 	top:200px;
 }
@@ -388,21 +360,18 @@
 	outline: none;
 	font-size: 15px;
 	text-align: right;
-  }
-  
-  .active{
-	background-color: #ccc;
   } 
+  .active {background-color: #ccc;} 
   .content {
 	width: 400px;
-	height: 400px;;
+	height: 400px;
 	position: relative;
 	display: none;
 	overflow: hidden;
 	background-color: #f1f1f1;
 	flex-basis: 200px;
   }
-  #senderList{
+  #senderList {
 	width: 400px;
 	height: 400px;
   }
@@ -419,12 +388,12 @@
 	background-position: right 10px bottom 10px;
 	padding-right:50px;
 }
-.contentBox{
+.contentBox {
 	position:relative;
 	border: solid;
 	float: right;
 	width: 200px;
-	height: 100px;;
+	height: 100px;
 	text-align: right;
 	line-height:20px;
 }
@@ -432,7 +401,7 @@
 	padding-right:30px;
 	padding-top:10px;
 }
-.contentBox .symbol{
+.contentBox .symbol {
 	position:absolute;
 	top:38px;
 	right:3px;
@@ -464,10 +433,7 @@
 	padding-right:3px;
 	font-size:30px;
 }
-.approve{
-	background-color: green;
-
-}
+.approve {background-color: green;}
 /**********/
 .congratsSender {
 	position:relative;
