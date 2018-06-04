@@ -13,7 +13,6 @@
 	width:100%;	
 }
 .logo{
-	
 	position:absolute;
 	right:90px;
 	line-height:106px;
@@ -179,6 +178,10 @@
 .home{
 	visibility: hidden;
 }
+.whiteCircle{
+	width: 60px;
+	height: 60px;
+}
 }
 .bigBox{
 	position: relative;
@@ -246,8 +249,9 @@
 	line-height:100px;
 }
 .mainSplice label{
+	position: absolute;
 	width: 500px;
-	margin-right: 7.5%;
+	right: 7.5%;
 	text-align: right;
 }
 .mainSplice select{
@@ -268,7 +272,7 @@
     text-align:center;
     line-height:65px;
 	left:10%;
-	top: 720px;
+	top: 90%;
 }
 /********/
 .mapPic{
@@ -297,16 +301,16 @@
 }
 .imgSplice {
 	position:relative;
-	height:400px;
+	height:350px;
 	border: 1px solid #cccccc;
 	border-top:0px;
 	text-align:right;
-	line-height:100px;
+	line-height:50px;
 }
 .ok{
-	top: 50px;
+	top: 90%;
 	display:block;
-	position:relative;
+	position: absolute;;
 	background-color:#00FF00;
 	border: 2px solid none;
     border-radius: 5px;
@@ -321,7 +325,7 @@
 	text-decoration:none;
 }
 .prev{
-	top: 720px;
+	top: 90%;
 	display:block;
 	position: absolute;
 	background-color:#e5e5ea;
@@ -331,7 +335,7 @@
     width:190px;
     text-align:center;
     line-height:65px;
-    left:80%;
+    left:70%;
 }
 .prev, .prev:hover{
 	color:#000000;
@@ -346,11 +350,11 @@
 	background-repeat: no-repeat;
 	height:301px;
 	width:335px;
-	top:-45px;
+	top:-25px;
 }
 @media screen and (max-width: 580px) {
 	.prev{
-		left:60%;
+		left:50%;
 	}
 	.next, .ok{
 		left:2%;
