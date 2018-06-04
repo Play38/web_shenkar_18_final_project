@@ -46,7 +46,7 @@
 	right:30px;
 }
 .greet{
-	padding-top: 100px;
+	padding-top: 50px;
 	text-align: center;
 }
 .hamburger{
@@ -190,18 +190,18 @@
 	background-color: #f1f1f1;
 }
 .home_map {
-	margin-top:70px;
+	margin-top:30px;
 	background-image: url("../images/map.png");
 	background-position: center; 
 	background-repeat: no-repeat;
-	height:356px;
+	height:258px;
 }
 .main_choice {
 	position:relative;
 	margin-top:100px;
 	width:100%;
 }
-.main_choice h2{
+.main_choice h5{
 	position:relative;
 	text-align:center;
 	bottom:100px;
@@ -218,18 +218,19 @@
 	background-image: url("../images/reciever.png");
 	background-position: left; 
 	background-repeat: no-repeat;
-	height:167px;
-	width:174px;
-	right:150px;
+	height:84px;
+	width:85px;
+	right:80px;
+	bottom:42px;
 }
 .choice2{
 	background-image: url("../images/sender.png");
 	background-position: right; 
 	background-repeat: no-repeat;
-	height:167px;
-	width:174px;
-	bottom:209px;
-	left:150px;
+	height:84px;
+	width:85px;
+	bottom:160px;
+	left:80px;
 }
 /*------------------*/
 .grayArea{
