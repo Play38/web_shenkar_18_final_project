@@ -463,3 +463,15 @@
 	background-color: green;
 
 }
+/**********/
+.congratsSender {
+	position:relative;
+	text-align:center;
+	top:200px;
+	
+}
+.congratsSender div {
+	font-size:80px;
+	color:#14eb3f;
+	padding-bottom:10px;
+}
