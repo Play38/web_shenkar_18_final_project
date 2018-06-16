@@ -63,27 +63,45 @@
         	<form action=" " method="get" autocomplete ="off">
          		<div class="mainSplice">         		
                 	<label>
-						<select class="form-control-sm" name="" id="">
-							<option>00:00</option>
-
-                    	</select>
-                    	<b>?מתי תרצה להתחיל לעבוד</b>
-                    	<section class="far fa-clock"></section>
+						 <input class="form-control-sm" type="text" name="addressFrom" placeholder="הכנס כתובת מלאה">
+                    	<b>מקום איסוף המשלוח</b>
+                    	<section class="fas fa-box"></section>
                 	</label>
                 </div>
-                <div id="clear"></div>
-				<div class="mainSplice">
-                	<label class="labelAdj"> 
-            			<select class="form-control-sm" name="" id="">
-							<option>00:00</option>
-
-                    	</select>
-						<b>?מתי תרצה לסיים לעבוד</b>
-				   		<section class="far fa-clock"></section>
+              
+				<div class="mainSplice">         		
+                	<label>
+						 <input class="form-control-sm" type="text" name="addressTo" placeholder="הכנס כתובת מלאה">
+                    	<b>יעד המשלוח</b>
+                    	<section class="fas fa-truck"></section>
                 	</label>
-				</div>
+                </div>
+				 
+				<div class="mainSplice">         		
+                	<label>
+						 <input class="form-control-sm" type="text" name="addressTo" placeholder="הכנס משקל בק''ג">
+                    	<b>משקל הפריט</b>
+                    	<section class="fas fa-balance-scale"></section>
+                	</label>
+                </div>
+                
+				<div class="mainSplice">         		
+                	<label>
+                		<b>האם שביר</b> 
+                		<section class="radio_rec"></section>
+						<input type="radio" name="gender" value="Yes" >	
+						<b>כן</b>
+						<section class="radio_rec"></section>
+						<input type="radio" name="gender" value="No">
+						<b>לא</b>
+                    	<section class="fas fa-glass-martini"></section>
+                	</label>
+                </div>
+                <label>
+                <input id="button" type="submit" a href="reciver2.html" value="הבא" class="next"></a>
+                </label>
 			</form>
-				<a href="sender2.html" class="next">הבא</a>
+				
 		</main>
 	</body>
 </html>
