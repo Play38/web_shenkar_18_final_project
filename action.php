@@ -29,7 +29,7 @@ $amount = mysqli_real_escape_string($link, $_REQUEST['amount']);
 $time= mysqli_real_escape_string($link, $_REQUEST['time']);
 $sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time')";
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
+	header('Location: reciver2.html'); 
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
