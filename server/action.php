@@ -10,16 +10,21 @@
     }
     if(isset($_POST['ttl'])){
         //escape variables for security
-        $ttle = mysqli_real_escape_string($connection, $_POST['ttl']);
-        $txt = mysqli_real_escape_string($connection, $_POST['desc']);
+        $pickupe = mysqli_real_escape_string($connection, $_POST['pickup']);
+        $deste = mysqli_real_escape_string($connection, $_POST['dest']);
+        $weighte = mysqli_real_escape_string($connection, $_POST['weight']);
+        $breakablee = mysqli_real_escape_string($connection, $_POST['breakable']);
+        $amounte = mysqli_real_escape_string($connection, $_POST['amount']);
+        $timee = mysqli_real_escape_string($connection, $_POST['time']);
 
         //SET: insert new data to DB
-        $query2 = "INSERT into tbl_test(title,txt) values ('$ttle', '$txt')";
+        $query2 = "INSERT into sender_list_204(title,txt) values ('$ttle', '$txt')";
         $result = mysqli_query($connection, $query2);
-
+        /*
         //GET: get data again
         $query2 = "SELECT * FROM tbl_test order by title desc";
         $result = mysqli_query($connection, $query2);
+        */
     }
     /*
     //GET: get data again
