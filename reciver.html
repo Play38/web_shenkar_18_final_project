@@ -63,7 +63,7 @@
         	<form action="server/action.php" method="get" autocomplete ="off">
          		<div class="mainSplice">         		
                 	<label>
-						 <input class="form-control-sm" type="text" name="pickup" placeholder="הכנס כתובת מלאה">
+						 <input class="form-control-sm" type="text" id="pickup" name="pickup" placeholder="הכנס כתובת מלאה">
                     	<b>מקום איסוף המשלוח</b>
                     	<section class="fas fa-box"></section>
                 	</label>
@@ -71,7 +71,7 @@
               
 				<div class="mainSplice">         		
                 	<label>
-						 <input class="form-control-sm" type="text" name="dest" placeholder="הכנס כתובת מלאה">
+						 <input class="form-control-sm" type="text" id="dest" name="dest" placeholder="הכנס כתובת מלאה">
                     	<b>יעד המשלוח</b>
                     	<section class="fas fa-truck"></section>
                 	</label>
@@ -79,7 +79,7 @@
 				 
 				<div class="mainSplice">         		
                 	<label>
-						 <input class="form-control-sm" type="text" name="weight" placeholder="הכנס משקל בק''ג">
+						 <input class="form-control-sm" type="text" id="weight" name="weight" placeholder="הכנס משקל בק''ג">
                     	<b>משקל הפריט</b>
                     	<section class="fas fa-balance-scale"></section>
                 	</label>
@@ -99,14 +99,14 @@
                 </div>
                 <div class="mainSplice">         		
                 	<label>
-						 <input class="form-control-sm" type="number" name="amount" value="1" min="1" max="10" >
+						 <input class="form-control-sm" type="number" id="amount" name="amount" value="1" min="1" max="10" >
                     	<b>:אם יש יותר מפריט אחד, אנא ציין כמה</b>
                     	<section class="fas fa-list-ol"></section>
                 	</label>
                 </div>
                 <div class="mainSplice">         		
                 	<label>
-						<select class="form-control-sm" name="time" id="">
+						<select class="form-control-sm" name="time" id="time">
 							<option>00:00</option>
 							<option>01:00</option>
 							<option>02:00</option>
