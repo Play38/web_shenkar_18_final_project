@@ -2,7 +2,7 @@
     include('db.php');
     
     //get data from DB to display
-    $query1 = "SELECT * FROM tbl_test order by title desc";    
+    $query1 = "SELECT * FROM sender_list_204 order by title desc";    
     $result = mysqli_query($connection, $query1);
 
     if(!$result) {

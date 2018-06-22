@@ -1,8 +1,8 @@
 ﻿<?php
-	$dbhost = "182.50.133.55" ;
-	$dbuser = "auxstudDB7c" ;
-	$dbpass = "auxstud7cDB1!" ;
-	$dbname = "auxstudDB7c" ;
+	$dbhost = "182.50.133.51" ;
+	$dbuser = "studDB18A" ;
+	$dbpass = "stud18aDB1!" ;
+	$dbname = "studDB18A" ;
 	$connection = mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
 	
 	if(mysqli_connect_errno ()) {
