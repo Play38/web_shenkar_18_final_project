@@ -20,3 +20,32 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+$(function() {
+  $("#gets").submit(function() {
+    var pickup = $("#pickup").val();
+    var dest = $("#dest").val();
+    var weight = $("#weight").val();
+    var breakable = $("#breakable").val();
+    var amount = $("#amount").val();
+    var time = $("#time").val();
+    var dataString = 'pickup=' + pickup + 'dest=' + dest + 'weight=' + weight + 'breakable=' + breakable + 'amount=' + amount + 'time=' + time;
+    /*
+    //console.log(dataString);
+    $("#loader").show();
+    $("#loader").fadeIn(300).html('<span class="loading">Loading..</span>');
+*/
+    $.ajax({
+      type: "GET",
+      url: "server/action.php",
+      data: dataString,
+      cache: true,
+      success: function(html){
+        $("#loader").after(html);
+        $("#loader").hide();
+        console.log(html)
+      }  
+    });
+    return false;
+  });
+});

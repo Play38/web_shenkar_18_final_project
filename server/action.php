@@ -1,14 +1,6 @@
 ﻿<?php
     include('db.php');
-    
-    //get data from DB to display
-    $query1 = "SELECT * FROM sender_list_204 order by name pickup dest weight breakable time amount";    
-    $result = mysqli_query($connection, $query1);
 
-    if(!$result) {
-        die('DB QUERY FAILED.');
-    }
-    if(isset($_POST['ttl'])){
         //escape variables for security
         $pickupe = mysqli_real_escape_string($connection, $_POST['pickup']);
         $deste = mysqli_real_escape_string($connection, $_POST['dest']);
@@ -16,16 +8,15 @@
         $breakablee = mysqli_real_escape_string($connection, $_POST['breakable']);
         $amounte = mysqli_real_escape_string($connection, $_POST['amount']);
         $timee = mysqli_real_escape_string($connection, $_POST['time']);
-
+    
         //SET: insert new data to DB
-        $query2 = "INSERT into sender_list_204(title,txt) values ('$ttle', '$txt')";
+        $query2 = "INSERT into sender_list_204(pickup, dest, weight, breakable, time, amount) values ('$pickupe', '$deste', '$weighte', '$breakablee', '$timee', '$amounte')";
         $result = mysqli_query($connection, $query2);
         /*
         //GET: get data again
         $query2 = "SELECT * FROM tbl_test order by title desc";
         $result = mysqli_query($connection, $query2);
         */
-    }
     /*
     //GET: get data again
     echo "<ul>";
@@ -35,7 +26,8 @@
     echo "</ul>";
     */
     //release returned data
-    mysqli_free_result($result);
+    
+    //mysqli_free_result($result);
 
     //close DB connection
     mysqli_close($connection);
