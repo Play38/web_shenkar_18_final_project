@@ -341,7 +341,7 @@
 }
 @media screen and (max-width: 580px) {
 	.prev {left:50%;}
-	.next, .ok,.nextdiffloc  {left:2%;}
+	.next, .ok, .nextdiffloc  {left:2%;}
 }
 /*------------------*/
 .customerList, th, td {
