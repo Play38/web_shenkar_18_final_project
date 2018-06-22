@@ -341,7 +341,7 @@
 }
 @media screen and (max-width: 580px) {
 	.prev {left:50%;}
-	.next, .ok {left:2%;}
+	.next, .ok,.nextdiffloc  {left:2%;}
 }
 /*------------------*/
 .customerList, th, td {
@@ -454,6 +454,20 @@
 .radio_rec {
 	display:inline;
 	margin-left:50px;}
-  
- */ 
- */
+
+	.nextdiffloc {
+		display:block;
+		position: absolute;
+		background-color:#e5e5ea;
+		border: 2px solid none;
+		border-radius: 5px;
+		height:65px;
+		width:190px;
+		text-align:center;
+		line-height:65px;
+		left:10%;
+	}
+	.nextdiffloc , .nextdiffloc :hover {
+		color:#000000;
+		text-decoration:none;
+	}
