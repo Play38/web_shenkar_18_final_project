@@ -378,6 +378,7 @@
   #senderList {
 	width: 400px;
 	height: 400px;
+	margin-top:30px;
   }
 .menPic {
 	background-image:url("../images/men.png");
