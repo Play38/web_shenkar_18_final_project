@@ -2,7 +2,7 @@
    	$dbhost = "182.50.133.51" ;
 	$dbuser = "studDB18A" ;
 	$dbpass = "stud18aDB1!" ;
-	$dbname = "studDB18A" ;
+    $dbname = "studDB18A" ;
 	$link = mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
 	
 	if(mysqli_connect_errno ()) {
@@ -11,7 +11,7 @@
 );
 }
 
-$query1 = "SELECT * FROM sender_list_204 order by name";    
+$query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";    
     $result = mysqli_query($link, $query1);
 
     if(!$result) {
@@ -80,7 +80,7 @@ $query1 = "SELECT * FROM sender_list_204 order by name";
         <main>
             <div class="SenderListWrapper">
         <?php
-            while($row = mysqli_fetch_assoc($result)){ //result are in an associative array. keys are cols names 
+            while($row = mysqli_fetch_assoc($result)){ 
                 echo "<div id='senderList' class='mx-auto'>
                 <button class='collapsible menPic'>" . $row["name"] . "</button>
                 <div class='content'>
@@ -139,6 +139,7 @@ $query1 = "SELECT * FROM sender_list_204 order by name";
                                                 </section>
                                             </div>
                                         </div>" ;
+                                       
                                     }
                                         mysqli_close($link);
             
