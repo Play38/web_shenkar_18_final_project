@@ -105,8 +105,7 @@
 	position:relative;
 	line-height:5px;
 	top:-25px;
-	text-align:center;
-	
+	text-align:center;	
 	width:249px;
 }
 .textMain2 h5 {display:inline;}
@@ -483,3 +482,19 @@
 	flex-basis: 200px;
 	top:30px;
   }
+/****************/
+
+.reciver3Center {
+	position: relative;
+	text-align: center;
+	top:60px;
+}
+.grayBox {
+	margin-top:50px;
+	margin-bottom:50px;
+	width:320px;
+	height:100px;
+	background-color: #e6e6e6;
+	border-radius:30px;
+}
+.grayBox h5 {padding-top:28px;}
