@@ -20,7 +20,13 @@ function generateRandomName() {
 		$randomName .= $lnames[mt_rand(0, count($lnames) - 1)];
     return $randomName;
 }
+function generateRandomNumber() {
+	$randomNumber = Math.floor((Math.random() * 100) + 1);
+	return $randomNumber;
+}
+
 $name = generateRandomName();
+$price = generateRandomNumber();
 $pickup = $_POST[pickup];
 $dest = $_POST[dest];
 $weight = $_POST[weight];

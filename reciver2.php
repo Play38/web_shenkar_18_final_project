@@ -142,7 +142,7 @@
             value="<?php echo $_POST['weight'] ?>">
             <input type="hidden" name="breakable" id="breakable"
             value="<?php echo $_POST['breakable'] ?>">
-                <input id="button" type="submit" class="ok">כן</button>
+                <input id="button" type="submit" class="ok"></button>
             </form>
             <a href="reciver.html" class="prev">חזור</a>
 		</main>
