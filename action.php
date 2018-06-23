@@ -11,8 +11,8 @@
 );
 }
 function generateRandomName() {
-	$fnames = array("Name","Asher","Dana","Yakov","Tal","Guts","Gundam","Orel");
-	$lnames = array("The king","Katz","Guttman","Cohen","Abir","Lastname2k","Lonet");
+	$fnames = array("עומר","אופיר","דנה","יעקב","עידן","דניאל","מקס","ישו");
+	$lnames = array("המלך","קץ","גוטמן","כוהן","דביר","אינשם","עודמשהו");
 	$randomName = '';
 	$space = ' ';
 		$randomName .= $fnames[mt_rand(0, count($fnames) - 1)];
