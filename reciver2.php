@@ -129,19 +129,19 @@
                 	</section>
                 </div>
             </div>
-            <form action="action.php" method ="POST">
+            <form action="action.php" method ="post">
             <input type="hidden" name="pickup" id="pickup"
-            value="<?php $_POST['pickup'] ?>">
-            <input type="hidden" name="dest"
-            value="<?php $_POST['dest'] ?>">
-            <input type="hidden" name="time"
-            value="<?php $_POST['time'] ?>">
-            <input type="hidden" name="amount"
-            value="<?php $_POST['amount'] ?>">
-            <input type="hidden" name="weight"
-            value="<?php $_POST['weight'] ?>">
+            value="<?php echo $_POST['pickup'] ?>">
+            <input type="hidden" name="dest" id="dest"
+            value="<?php echo $_POST['dest'] ?>">
+            <input type="hidden" name="time" id="time"
+            value="<?php echo $_POST['time'] ?>">
+            <input type="hidden" name="amount" id="amount"
+            value="<?php echo $_POST['amount'] ?>">
+            <input type="hidden" name="weight" id="weight"
+            value="<?php echo $_POST['weight'] ?>">
             <input type="hidden" name="breakable" id="breakable"
-            value="<?php $_POST['breakable'] ?>">
+            value="<?php echo $_POST['breakable'] ?>">
                 <input id="button" type="submit" class="ok">כן</button>
             </form>
             <a href="reciver.html" class="prev">חזור</a>

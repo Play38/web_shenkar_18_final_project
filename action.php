@@ -21,16 +21,15 @@ function generateRandomName() {
     return $randomName;
 }
 $name = generateRandomName();
-$pickup = mysqli_real_escape_string($link, $_POST['pickup']);
-echo "$_POST[pickup] ssss";
-$dest = mysqli_real_escape_string($link,  $_POST['dest']);
-$weight = mysqli_real_escape_string($link,  $_POST['weight']);
-$breakable = mysqli_real_escape_string($link,  $_POST['breakable']);
-$amount = mysqli_real_escape_string($link,  $_POST['amount']);
-$time= mysqli_real_escape_string($link,  $_POST['time']);
+$pickup = $_POST[pickup];
+$dest = $_POST[dest];
+$weight = $_POST[weight];
+$breakable = $_POST[breakable];
+$amount = $_POST[amount];
+$time= $_POST[time];
 $sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time')";
 if(mysqli_query($link, $sql)){
-	//header('Location: reciver3.html'); 
+	header('Location: reciver3.html'); 
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
