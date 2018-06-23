@@ -21,15 +21,16 @@ function generateRandomName() {
     return $randomName;
 }
 $name = generateRandomName();
-$pickup = mysqli_real_escape_string($link, $_REQUEST['pickup']);
-$dest = mysqli_real_escape_string($link, $_REQUEST['dest']);
-$weight = mysqli_real_escape_string($link, $_REQUEST['weight']);
-$breakable = mysqli_real_escape_string($link, $_REQUEST['breakable']);
-$amount = mysqli_real_escape_string($link, $_REQUEST['amount']);
-$time= mysqli_real_escape_string($link, $_REQUEST['time']);
+$pickup = mysqli_real_escape_string($link, $_POST['pickup']);
+echo "$_POST[pickup] ssss";
+$dest = mysqli_real_escape_string($link,  $_POST['dest']);
+$weight = mysqli_real_escape_string($link,  $_POST['weight']);
+$breakable = mysqli_real_escape_string($link,  $_POST['breakable']);
+$amount = mysqli_real_escape_string($link,  $_POST['amount']);
+$time= mysqli_real_escape_string($link,  $_POST['time']);
 $sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time')";
 if(mysqli_query($link, $sql)){
-	header('Location: reciver2.html'); 
+	//header('Location: reciver3.html'); 
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

@@ -79,8 +79,7 @@
                 	<section class="textInBox2">
                         <section>:מספר הפריטים הוא</section>
                         <?php
-                            $amount = mysqli_real_escape_string($link, $_REQUEST['amount']);
-                             echo"<section> $amount </section> ";
+                            echo"<section> $_POST[amount]</section> ";
                         ?>
                 	</section>
                 </div>
@@ -89,8 +88,7 @@
                 	<section class="textInBox2">
                         <section>:שעת השילוח</section>
                         <?php
-                            $time = mysqli_real_escape_string($link, $_REQUEST['time']);
-                             echo"<section> $time</section> ";
+                            echo"<section> $_POST[time]</section> ";
                         ?>
                 	</section>
                 </div>
@@ -99,8 +97,7 @@
                 	<section class="textInBox2">
                 		<section>:מקום איסוף המשלוח</section>
                     <?php
-                            $pickup= mysqli_real_escape_string($link, $_REQUEST['pickup']);
-                             echo"<section> $pickup</section> ";
+                             echo"<section> $_POST[pickup]</section> ";
                         ?>
                     </section>
                 </div>
@@ -109,8 +106,7 @@
                 	<section class="textInBox2">
                         <section>:משקל הפריט</section>
                         <?php
-                            $weight= mysqli_real_escape_string($link, $_REQUEST['weight']);
-                             echo"<section> $weight</section> ";
+                            echo"<section> $_POST[weight]</section> ";
                         ?>
                 	</section>
                 </div>
@@ -119,8 +115,7 @@
                 	<section class="textInBox2">
                         <section>:יעד המשלוח</section>
                         <?php
-                            $dest = mysqli_real_escape_string($link, $_REQUEST['dest']);
-                             echo"<section> $dest</section> ";
+                            echo"<section> $_POST[dest]</section> ";
                         ?>
                     </section>
                 </div>
@@ -129,14 +124,27 @@
                 	<section class="textInBox2">
                         <section>?שביר</section>
                         <?php
-                            $breakable = mysqli_real_escape_string($link, $_REQUEST['breakable']);
-                             echo"<section> $breakable</section> ";
+                            echo"<section> $_POST[breakable]</section> ";
                         ?>
                 	</section>
                 </div>
             </div>
+            <form action="action.php" method ="POST">
+            <input type="hidden" name="pickup" id="pickup"
+            value="<?php $_POST['pickup'] ?>">
+            <input type="hidden" name="dest"
+            value="<?php $_POST['dest'] ?>">
+            <input type="hidden" name="time"
+            value="<?php $_POST['time'] ?>">
+            <input type="hidden" name="amount"
+            value="<?php $_POST['amount'] ?>">
+            <input type="hidden" name="weight"
+            value="<?php $_POST['weight'] ?>">
+            <input type="hidden" name="breakable" id="breakable"
+            value="<?php $_POST['breakable'] ?>">
+                <input id="button" type="submit" class="ok">כן</button>
+            </form>
             <a href="reciver.html" class="prev">חזור</a>
-            <a href="reciver5.html" class="ok">כן</a>
 		</main>
 	</body>
 </html>
