@@ -473,3 +473,14 @@
 	}
 
 	/****************/
+
+	.contentReciver {
+		width: 400px;
+		height: 400px;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		background-color: #f1f1f1;
+		flex-basis: 200px;
+		top:30px;
+	  }
