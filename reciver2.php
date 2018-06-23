@@ -1,4 +1,17 @@
-﻿<!DOCTYPE html>
+<?php
+   	$dbhost = "182.50.133.51" ;
+	$dbuser = "studDB18A" ;
+	$dbpass = "stud18aDB1!" ;
+	$dbname = "studDB18A" ;
+	$link = mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
+	
+	if(mysqli_connect_errno ()) {
+		die("DB connection failed: " . mysqli_connect_error () . " (" .
+		mysqli_connect_errno () . ")"
+);
+}
+?>
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -59,88 +72,77 @@
             <section class="bread"><div class="breadSelect">מילוי פרטים</div>  <b class="breadSelect">></b> אימות פרטים <b class="breadSelect">></b> חיפוש משלוח <b class="breadSelect">></b> סיום</section>
         </header>
         <main>
-        	<div class="grayArea">אתה השולח, אנא מלא את השדות הבאים</div>
-        	<form action="reciver2.php" method="post">
-         		<div class="mainSplice">         		
-                	<label>
-						 <input class="form-control-sm" type="text" id="pickup" name="pickup" placeholder="הכנס כתובת מלאה">
-                    	<b>מקום איסוף המשלוח</b>
-                    	<section class="fas fa-box"></section>
-                	</label>
+            <div class="grayArea">?האם אלו הפרטים שהזנת</div>
+            <div class="contentReciver mx-auto">
+                <div class="contentBox">
+                	<div class="symbol fas fa-list-ol"></div>
+                	<section class="textInBox2">
+                        <section>:מספר הפריטים הוא</section>
+                        <?php
+                            $amount = mysqli_real_escape_string($link, $_REQUEST['amount']);
+                             echo"<section> $amount </section> ";
+                        ?>
+                	</section>
                 </div>
-              
-				<div class="mainSplice">         		
-                	<label>
-						 <input class="form-control-sm" type="text" id="dest" name="dest" placeholder="הכנס כתובת מלאה">
-                    	<b>יעד המשלוח</b>
-                    	<section class="fas fa-truck"></section>
-                	</label>
+                <div class="contentBox"> 	
+                	<div class="symbol far fa-clock"></div>
+                	<section class="textInBox2">
+                        <section>:שעת השילוח</section>
+                        <?php
+                            $time = mysqli_real_escape_string($link, $_REQUEST['time']);
+                             echo"<section> $time</section> ";
+                        ?>
+                	</section>
                 </div>
-				 
-				<div class="mainSplice">         		
-                	<label>
-						 <input class="form-control-sm" type="text" id="weight" name="weight" placeholder="הכנס משקל בק''ג">
-                    	<b>משקל הפריט</b>
-                    	<section class="fas fa-balance-scale"></section>
-                	</label>
+                <div class="contentBox">
+                	<div class="symbol fas fa-box"></div>
+                	<section class="textInBox2">
+                		<section>:מקום איסוף המשלוח</section>
+                    <?php
+                            $pickup= mysqli_real_escape_string($link, $_REQUEST['pickup']);
+                             echo"<section> $pickup</section> ";
+                        ?>
+                    </section>
                 </div>
-                
-				<div class="mainSplice">         		
-                	<label>
-                		<b>האם שביר</b> 
-                		<section class="radio_rec"></section>
-						<input type="radio" name="breakable" value="Yes" >	
-						<b>כן</b>
-						<section class="radio_rec"></section>
-						<input type="radio" name="breakable" value="No">
-						<b>לא</b>
-                    	<section class="fas fa-glass-martini"></section>
-                	</label>
+                <div class="contentBox">
+                	<div class="symbol fas fa-balance-scale"></div>
+                	<section class="textInBox2">
+                        <section>:משקל הפריט</section>
+                        <?php
+                            $weight= mysqli_real_escape_string($link, $_REQUEST['weight']);
+                             echo"<section> $weight</section> ";
+                        ?>
+                	</section>
                 </div>
-                <div class="mainSplice">         		
-                	<label>
-						 <input class="form-control-sm" type="number" id="amount" name="amount" value="1" min="1" max="10" >
-                    	<b>:אם יש יותר מפריט אחד, אנא ציין כמה</b>
-                    	<section class="fas fa-list-ol"></section>
-                	</label>
+                <div class="contentBox">
+                	<div class="symbol fas fa-truck"></div>
+                	<section class="textInBox2">
+                        <section>:יעד המשלוח</section>
+                        <?php
+                            $dest = mysqli_real_escape_string($link, $_REQUEST['dest']);
+                             echo"<section> $dest</section> ";
+                        ?>
+                    </section>
                 </div>
-                <div class="mainSplice">         		
-                	<label>
-						<select class="form-control-sm" name="time" id="time">
-							<option>00:00</option>
-							<option>01:00</option>
-							<option>02:00</option>
-							<option>03:00</option>
-							<option>04:00</option>
-							<option>05:00</option>
-							<option>06:00</option>
-							<option>07:00</option>
-							<option>08:00</option>
-							<option>09:00</option>
-							<option>10:00</option>
-							<option>11:00</option>
-							<option>12:00</option>
-							<option>13:00</option>
-							<option>14:00</option>
-							<option>15:00</option>
-							<option>16:00</option>
-							<option>17:00</option>
-							<option>18:00</option>
-							<option>19:00</option>
-							<option>20:00</option>
-							<option>21:00</option>
-							<option>22:00</option>
-                        	<option>23:00</option>
-                    	</select>
-                    	<b>:שעת השילוח</b>
-                    	<section class="far fa-clock"></section>
-                	</label>
+                <div class="contentBox ">
+                	<div class="symbol fas fa-glass-martini"></div>
+                	<section class="textInBox2">
+                        <section>?שביר</section>
+                        <?php
+                            $breakable = mysqli_real_escape_string($link, $_REQUEST['breakable']);
+                             echo"<section> $breakable</section> ";
+                        ?>
+                	</section>
                 </div>
-                <label>
-                <input id="button" type="submit" value="הבא" class="nextdiffloc"></a>
-                </label>
-			</form>
-				
+                <div class="contentBox approve">
+                	<section class="textInBoxApprove">
+                		<a href="reciver3.html">אשר</a>
+                	</section>
+                </div>
+            </div>
 		</main>
 	</body>
 </html>
+<?php
+mysqli_close($link);
+?>

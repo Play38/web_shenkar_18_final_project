@@ -378,7 +378,6 @@
   #senderList {
 	width: 400px;
 	height: 400px;
-	margin-top:30px;
   }
 .menPic {
 	background-image:url("../images/men.png");
@@ -472,16 +471,3 @@
 		color:#000000;
 		text-decoration:none;
 	}
-
-	/****************/
-
-	.contentReciver {
-		width: 400px;
-		height: 400px;
-		position: relative;
-		display: block;
-		overflow: hidden;
-		background-color: #f1f1f1;
-		flex-basis: 200px;
-		top:30px;
-	  }
