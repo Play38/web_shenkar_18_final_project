@@ -20,20 +20,15 @@ function generateRandomName() {
 		$randomName .= $lnames[mt_rand(0, count($lnames) - 1)];
     return $randomName;
 }
-function generateRandomNumber() {
-	$randomNumber = Math.floor((Math.random() * 100) + 1);
-	return $randomNumber;
-}
-
 $name = generateRandomName();
-$price = generateRandomNumber();
+$price = $_POST[price];
 $pickup = $_POST[pickup];
 $dest = $_POST[dest];
 $weight = $_POST[weight];
 $breakable = $_POST[breakable];
 $amount = $_POST[amount];
 $time= $_POST[time];
-$sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time')";
+$sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time','$price')";
 if(mysqli_query($link, $sql)){
 	header('Location: reciver3.html'); 
 } else{

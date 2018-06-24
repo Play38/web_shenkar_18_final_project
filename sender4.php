@@ -130,7 +130,7 @@ $query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";
                                                 <div class='NIS'>₪</div>
                                                 <section class='textInBox2'>
                                                     <section>:תשלום</section>
-                                                    <section>20</section>
+                                                    <section>".$row["price"]."</section>
                                                 </section>
                                             </div>
                                             <div class='contentBox approve'>

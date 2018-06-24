@@ -129,6 +129,8 @@
                 	</section>
                 </div>
             </div>
+            <h1> כאן יהיה את התשלום</h1>
+            <?php $price=rand(10,100); echo $price?>
             <form action="action.php" method ="post">
             <input type="hidden" name="pickup" id="pickup"
             value="<?php echo $_POST['pickup'] ?>">
@@ -142,6 +144,9 @@
             value="<?php echo $_POST['weight'] ?>">
             <input type="hidden" name="breakable" id="breakable"
             value="<?php echo $_POST['breakable'] ?>">
+            <input type="hidden" name="price" id="price"
+            value="<?php echo $price?>">
+            
                 <input id="button" type="submit" class="ok"></button>
             </form>
             <a href="reciver.html" class="prev">חזור</a>
