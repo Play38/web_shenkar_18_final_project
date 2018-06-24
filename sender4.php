@@ -85,7 +85,7 @@ $query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";
                 <button class='collapsible menPic'>" . $row["name"] . "</button>
                 <div class='content'>
                     <div class='contentBox'>
-                        <div class='symbol fas fa-truck'></div>
+                        <div class='symbol fas fa-box'></div>
                         <section class='textInBox2'>
                             <section>:כתובת איסוף</section>
                             <section>" . $row["pickup"] . "</section>
@@ -113,7 +113,7 @@ $query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";
                                         </section>
                                     </div>
                                     <div class='contentBox'>
-                                        <div class='symbol fas fa-truck-loading'></div>
+                                        <div class='symbol fas fa-list-ol'></div>
                                         <section class='textInBox2'>
                                             <section>:מספר פריטים</section>
                                             <section>" . $row["amount"] . "</section>
