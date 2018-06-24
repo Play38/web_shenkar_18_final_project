@@ -56,7 +56,7 @@
                 </div>
             </div>
             <section class="logo">שולח</section>
-            <section class="bread">מילוי פרטים <b class="breadSelect">></b> <div class="breadSelect">אימות פרטים <b class="breadSelect">></b> חיפוש שליח <b class="breadSelect">></b> סיום</section>
+            <section class="bread">מילוי פרטים <b class="breadSelect">></b> <div class="breadSelect">אימות פרטים</div> <b class="breadSelect">></b> סיום</section>
         </header>
         <main>
             <div class="grayArea">?האם אלו הפרטים שהזנת</div>
