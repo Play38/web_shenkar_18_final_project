@@ -129,8 +129,14 @@
                 	</section>
                 </div>
             </div>
-            <h1> כאן יהיה את התשלום</h1>
-            <?php $price=rand(10,100); echo $price?>
+            <section class="reciverPrice">
+                <h4> :על פי הפרטים שהזנת, עלות המשלוח תהיה</h4>
+                <section>
+                    <?php 
+                    $price=rand(10,100); echo $price
+                    ?>₪
+                </section>
+            </section>
             <form action="action.php" method ="post">
             <input type="hidden" name="pickup" id="pickup"
             value="<?php echo $_POST['pickup'] ?>">
