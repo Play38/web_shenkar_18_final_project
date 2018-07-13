@@ -269,6 +269,8 @@ iframe {
 	left:10%;
 	top: 90%;
 }
+
+.senderButton {padding-top:20px;}
 /********/
 .mapPic iframe {
 	position:relative;
