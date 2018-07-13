@@ -60,10 +60,10 @@
         </header>
         <main>
         	<div class="grayArea">אתה השליח, אנא מלא את השדות הבאים</div>
-        	<form action="sender2.php" method="post">
+        	<form action="sender3.php" method="post">
          		<div class="mainSplice">         		
                 	<label>
-						<select class="form-control-sm" name="TimeStart" id="TimeStart">
+						<select class="form-control-sm" name="timeStart" id="timeStart">
 							<option>00:00</option>
 							<option>01:00</option>
 							<option>02:00</option>
@@ -125,6 +125,15 @@
 						<b>?מתי תרצה לסיים לעבוד</b>
 				   		<section class="far fa-clock"></section>
                 	</label>
+				</div>
+				<div class="imgSplice">
+					<p><b>:אנא בחר רדיוס פעילות</b></p>
+					<div class="mapPic">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3932.196357707349!2d34.80263487796807!3d32.12399897693614!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1531484901542" width="335" height="298" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="rangeCenter">
+						<input class="rangeWidth" type="range" name="points" min="0" max="100" value="50">
+					</div>
 				</div>
 				<label class="senderButton">
 					<input id="button" type="submit" value="הבא" class="nextdiffloc"></a>
