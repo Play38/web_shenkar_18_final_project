@@ -63,10 +63,7 @@
     <div class="mainSplice smallLineHieght">
         <p><b>:שעות הפעילות שלך להיום הן <b class="far fa-clock"></b></p>
         <?php
-        echo"<section> $_POST[timeStart]</section> ";
-        ?>
-        <?php
-        echo"<section> $_POST[timEnd]</section> ";
+        echo"<p> $_POST[timEnd] מ-$_POST[timeStart] עד</p>";
         ?>
 
     </div>

@@ -336,7 +336,7 @@ iframe {
 .imgSplice p{margin-right: 7.5%;}
 .mapPic2 iframe {
 	position:relative;
-	top:-25px;
+	top:35px;
 }
 @media screen and (max-width: 580px) {
 	.prev {left:50%;}
