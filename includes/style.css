@@ -4,6 +4,7 @@
 	font-family: 'Alef', sans-serif;
 }
 #clear{clear: both;}
+
 .header_mobile {
 	position:relative;
 	background-color:#e6e6e6;
@@ -93,6 +94,10 @@
 	width: 83px;
 	top:30px;
 }
+iframe {
+	display:block;
+	margin: 0 auto;
+}
 .top_nav_box p {text-align: center;}
 .middle_nav_box {
 	position:absolute;
@@ -173,12 +178,9 @@
 	height: 300px;
 	background-color: #f1f1f1;
 }
-.home_map {
-	margin-top:30px;
-	background-image: url("../images/map.png");
-	background-position: center; 
-	background-repeat: no-repeat;
-	height:258px;
+.home_map iframe {
+	position:relative;
+	top:30px;
 }
 .choiceBorder {
 	position:relative;
@@ -268,12 +270,8 @@
 	top: 90%;
 }
 /********/
-.mapPic {
+.mapPic iframe {
 	position:relative;
-	background-image: url("../images/serachMap.png");
-	background-repeat: no-repeat;
-	height:298px;
-	width:335px;
 	top:20px;
 }
 .rangeWidth {
@@ -330,12 +328,8 @@
 	text-decoration:none;
 }
 .imgSplice p{margin-right: 7.5%;}
-.mapPic2 {
+.mapPic2 iframe {
 	position:relative;
-	background-image: url("../images/serachMap2.png");
-	background-repeat: no-repeat;
-	height:298px;
-	width:335px;
 	top:-25px;
 }
 @media screen and (max-width: 580px) {
