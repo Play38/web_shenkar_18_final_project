@@ -445,7 +445,7 @@ iframe {
 	top:200px;
 
 }
-.congratsSender div {
+.congratsSender section {
 	font-size:80px;
 	color:#14eb3f;
 	padding-bottom:10px;
@@ -456,7 +456,7 @@ iframe {
 	top:200px;
 
 }
-.failSender div {
+.failSender section {
 	font-size:100px;
 	color:#ff0000;
 	padding-bottom:10px;

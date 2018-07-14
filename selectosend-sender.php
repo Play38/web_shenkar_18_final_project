@@ -38,116 +38,116 @@ $query1 = "SELECT * FROM `sender_list_204` WHERE $start <= time AND time <= $end
 	</head>
 	<body>
         <header class="header_mobile">
-        	<div class="home">
+        	<section class="home">
         		<a href="index.html" class="fas fa-home"></a>
-        	</div>
+        	</section>
             <nav class="fas fa-bars bar hamburger" data-lightbox="image-1" onclick="openNav()" ></nav>
-            <div id="mySidenav" class="sidenav">
-               <div class="top_nav_box ">
+            <section id="mySidenav" class="sidenav">
+               <section class="top_nav_box ">
                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                   <div class="whiteCircle mx-auto"></div>
-                    <div class="textMain mx-auto">
+                   <section class="whiteCircle mx-auto"></section>
+                    <section class="textMain mx-auto">
                         <p>אור כהן</p>
                         <p>@Orof</p>
-                    </div>
-                </div>
-                <div class="middle_nav_box">
-                	<div class="whiteCircle2 mx-auto"></div>
-                	<div class="textMain2 mx-auto">
+                    </section>
+                </section>
+                <section class="middle_nav_box">
+                	<section class="whiteCircle2 mx-auto"></section>
+                	<section class="textMain2 mx-auto">
                 		<p><h5>שליט המשלוחים</h5> 1480 נקודות</p>
                 		<p>!אתה בדירוג המירבי</p>
-                	</div>
-                </div>
-                <div class="menu_box">
+                	</section>
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="far fa-credit-card"></p> הגדרות תשלום</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-history"></p> היסטוריה</a>
-                </div>
-                 <div class="menu_box">
+                </section>
+                 <section class="menu_box">
                     <a href="#"><p class="fas fa-angle-double-right"></p> משלוחים פעילים</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-gift"></p> קוד קופון</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-cog"></p> הגדרות</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="far fa-question-circle"></p> עזרה</a>
-                </div>
-            </div>
+                </section>
+            </section>
             <section class="logo">שליח</section>
-             <section class="bread">מילוי פרטים <b class="breadSelect">></b> אימות פרטים <b class="breadSelect">></b> <div class="breadSelect">חיפוש משלוח</div> <b class="breadSelect">></b> סיום</section>  
+             <section class="bread">מילוי פרטים <b class="breadSelect">></b> אימות פרטים <b class="breadSelect">></b> <section class="breadSelect">חיפוש משלוח</section> <b class="breadSelect">></b> סיום</section>
         </header>
         <main>
-            <div class="SenderListWrapper">
+            <section class="SenderListWrapper">
         <?php
             while($row = mysqli_fetch_assoc($result)){ 
-                echo "<div id='senderList' class='mx-auto'>
+                echo "<section id='senderList' class='mx-auto'>
                 <button class='collapsible menPic'>" . $row["name"] . "</button>
-                <div class='content'>
-                    <div class='contentBox'>
-                        <div class='symbol fas fa-box'></div>
+                <section class='content'>
+                    <section class='contentBox'>
+                        <section class='symbol fas fa-box'></section>
                         <section class='textInBox2'>
                             <section>:כתובת איסוף</section>
                             <section>" . $row["pickup"] . "</section>
                             </section>
-                        </div>
-                        <div class='contentBox'> 	
-                            <div class='symbol fas fa-balance-scale'></div>
+                        </section>
+                        <section class='contentBox'> 	
+                            <section class='symbol fas fa-balance-scale'></section>
                             <section class='textInBox2'>
                                 <section>:משקל</section>
                                 <section>" . $row["weight"] . " kg</section>
                                 </section>
-                            </div>
-                            <div class='contentBox'>
-                                <div class='symbol fas fa-truck'></div>
+                            </section>
+                            <section class='contentBox'>
+                                <section class='symbol fas fa-truck'></section>
                                 <section class='textInBox2'>
                                     <section>:כתובת שליחה</section>
                                     <section>" . $row["dest"] . "</section>
                                     </section>
-                                </div>
-                                <div class='contentBox'>
-                                    <div class='symbol fas fa-glass-martini'></div>
+                                </section>
+                                <section class='contentBox'>
+                                    <section class='symbol fas fa-glass-martini'></section>
                                     <section class='textInBox2'>
                                         <section>?שביר</section>
                                         <section>" . $row["breakable"] . "</section>
                                         </section>
-                                    </div>
-                                    <div class='contentBox'>
-                                        <div class='symbol fas fa-list-ol'></div>
+                                    </section>
+                                    <section class='contentBox'>
+                                        <section class='symbol fas fa-list-ol'></section>
                                         <section class='textInBox2'>
                                             <section>:מספר פריטים</section>
                                             <section>" . $row["amount"] . "</section>
                                             </section>
-                                        </div>
-                                        <div class='contentBox'>
-                                            <div class='symbol far fa-clock'></div>
+                                        </section>
+                                        <section class='contentBox'>
+                                            <section class='symbol far fa-clock'></section>
                                             <section class='textInBox2'>
                                                 <section>:שעת איסוף</section>
                                                 <section>" . $row["time"] . ":00</section>
                                                 </section>
-                                            </div>
-                                            <div class='contentBox'>
-                                                <div class='NIS'>₪</div>
+                                            </section>
+                                            <section class='contentBox'>
+                                                <section class='NIS'>₪</section>
                                                 <section class='textInBox2'>
                                                     <section>:תשלום</section>
                                                     <section>".$row["price"]."</section>
                                                 </section>
-                                            </div>
-                                            <div class='contentBox approve'>
+                                            </section>
+                                            <section class='contentBox approve'>
                                                 <section class='textInBoxApprove'>
                                                     <a href='finish-sender.html'>אשר</a>
                                                 </section>
-                                            </div>
-                                        </div>" ;
+                                            </section>
+                                        </section>" ;
                                         $zeroRows++;
                                     }
                                     if($zeroRows == 0)
                                     {
                                         echo "<section class='failSender'>
-                                        <div class='fas fa-times'></div>
+                                        <section class='fas fa-times'></section>
                                         <h3>לא נמצאו משלוחים</h3>
                                         <h3>אנא בחר שעות פעילות אחרות</h3>
                                         </section>
@@ -155,7 +155,7 @@ $query1 = "SELECT * FROM `sender_list_204` WHERE $start <= time AND time <= $end
                                     }
                                         mysqli_close($link);
         ?>
-       </div>        
+       </section>
 		</main>
 		<script src="includes/js/main.js"></script>
 	</body>

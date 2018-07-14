@@ -16,106 +16,106 @@
 	</head>
 	<body>
         <header class="header_mobile">
-        	<div class="home">
+        	<section class="home">
         		<a href="index.html" class="fas fa-home"></a>
-        	</div>
+        	</section>
             <nav class="fas fa-bars bar hamburger" data-lightbox="image-1" onclick="openNav()" ></nav>
-            <div id="mySidenav" class="sidenav">
-               <div class="top_nav_box ">
+            <section id="mySidenav" class="sidenav">
+               <section class="top_nav_box ">
                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                   <div class="whiteCircle mx-auto"></div>
-                    <div class="textMain mx-auto">
+                   <section class="whiteCircle mx-auto"></section>
+                    <section class="textMain mx-auto">
                         <p>אור כהן</p>
                         <p>@Orof</p>
-                    </div>
-                </div>
-                <div class="middle_nav_box">
-                	<div class="whiteCircle2 mx-auto"></div>
-                	<div class="textMain2 mx-auto">
+                    </section>
+                </section>
+                <section class="middle_nav_box">
+                	<section class="whiteCircle2 mx-auto"></section>
+                	<section class="textMain2 mx-auto">
                 		<p><h5>שליט המשלוחים</h5> 1480 נקודות</p>
                 		<p>!אתה בדירוג המירבי</p>
-                	</div>
-                </div>
-                <div class="menu_box">
+                	</section>
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="far fa-credit-card"></p> הגדרות תשלום</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-history"></p> היסטוריה</a>
-                </div>
-                 <div class="menu_box">
+                </section>
+                 <section class="menu_box">
                     <a href="#"><p class="fas fa-angle-double-right"></p> משלוחים פעילים</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-gift"></p> קוד קופון</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="fas fa-cog"></p> הגדרות</a>
-                </div>
-                <div class="menu_box">
+                </section>
+                <section class="menu_box">
                     <a href="#"><p class="far fa-question-circle"></p> עזרה</a>
-                </div>
-            </div>
+                </section>
+            </section>
             <section class="logo">שולח</section>
-            <section class="bread">מילוי פרטים <b class="breadSelect">></b> <div class="breadSelect">אימות פרטים</div> <b class="breadSelect">></b> סיום</section>
+            <section class="bread">מילוי פרטים <b class="breadSelect">></b> <section class="breadSelect">אימות פרטים</section> <b class="breadSelect">></b> סיום</section>
         </header>
         <main>
-            <div class="grayArea">?האם אלו הפרטים שהזנת</div>
-            <div class="contentReciver mx-auto">
-                <div class="contentBox">
-                	<div class="symbol fas fa-list-ol"></div>
+            <section class="grayArea">?האם אלו הפרטים שהזנת</section>
+            <section class="contentReciver mx-auto">
+                <section class="contentBox">
+                	<section class="symbol fas fa-list-ol"></section>
                 	<section class="textInBox2">
                         <section>:מספר הפריטים הוא</section>
                         <?php
                             echo"<section> $_POST[amount]</section> ";
                         ?>
                 	</section>
-                </div>
-                <div class="contentBox"> 	
-                	<div class="symbol far fa-clock"></div>
+                </section>
+                <section class="contentBox">
+                	<section class="symbol far fa-clock"></section>
                 	<section class="textInBox2">
                         <section>:שעת השילוח</section>
                         <?php
                             echo"<section> $_POST[time]</section> ";
                         ?>
                 	</section>
-                </div>
-                <div class="contentBox">
-                	<div class="symbol fas fa-box"></div>
+                </section>
+                <section class="contentBox">
+                	<section class="symbol fas fa-box"></section>
                 	<section class="textInBox2">
                 		<section>:מקום איסוף המשלוח</section>
                     <?php
                              echo"<section> $_POST[pickup]</section> ";
                         ?>
                     </section>
-                </div>
-                <div class="contentBox">
-                	<div class="symbol fas fa-balance-scale"></div>
+                </section>
+                <section class="contentBox">
+                	<section class="symbol fas fa-balance-scale"></section>
                 	<section class="textInBox2">
                         <section>:משקל הפריט</section>
                         <?php
                             echo"<section> $_POST[weight]</section> ";
                         ?>
                 	</section>
-                </div>
-                <div class="contentBox">
-                	<div class="symbol fas fa-truck"></div>
+                </section>
+                <section class="contentBox">
+                	<section class="symbol fas fa-truck"></section>
                 	<section class="textInBox2">
                         <section>:יעד המשלוח</section>
                         <?php
                             echo"<section> $_POST[dest]</section> ";
                         ?>
                     </section>
-                </div>
-                <div class="contentBox ">
-                	<div class="symbol fas fa-glass-martini"></div>
+                </section>
+                <section class="contentBox ">
+                	<section class="symbol fas fa-glass-martini"></section>
                 	<section class="textInBox2">
                         <section>?שביר</section>
                         <?php
                             echo"<section> $_POST[breakable]</section> ";
                         ?>
                 	</section>
-                </div>
-            </div>
+                </section>
+            </section>
             <section class="reciverPrice">
                 <h4> :על פי הפרטים שהזנת, עלות המשלוח תהיה</h4>
                 <section>

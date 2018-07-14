@@ -16,63 +16,63 @@
 </head>
 <body>
 <header class="header_mobile">
-    <div class="home">
+    <section class="home">
         <a href="index.html" class="fas fa-home"></a>
-    </div>
+    </section>
     <nav class="fas fa-bars bar hamburger" data-lightbox="image-1" onclick="openNav()" ></nav>
-    <div id="mySidenav" class="sidenav">
-        <div class="top_nav_box ">
+    <section id="mySidenav" class="sidenav">
+        <section class="top_nav_box ">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="whiteCircle mx-auto"></div>
-            <div class="textMain mx-auto">
+            <section class="whiteCircle mx-auto"></section>
+            <section class="textMain mx-auto">
                 <p>אור כהן</p>
                 <p>@Orof</p>
-            </div>
-        </div>
-        <div class="middle_nav_box">
-            <div class="whiteCircle2 mx-auto"></div>
-            <div class="textMain2 mx-auto">
+            </section>
+        </section>
+        <section class="middle_nav_box">
+            <section class="whiteCircle2 mx-auto"></section>
+            <section class="textMain2 mx-auto">
                 <p><h5>שליט המשלוחים</h5> 1480 נקודות</p>
                 <p>!אתה בדירוג המירבי</p>
-            </div>
-        </div>
-        <div class="menu_box">
+            </section>
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="far fa-credit-card"></p> הגדרות תשלום</a>
-        </div>
-        <div class="menu_box">
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="fas fa-history"></p> היסטוריה</a>
-        </div>
-        <div class="menu_box">
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="fas fa-angle-double-right"></p> משלוחים פעילים</a>
-        </div>
-        <div class="menu_box">
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="fas fa-gift"></p> קוד קופון</a>
-        </div>
-        <div class="menu_box">
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="fas fa-cog"></p> הגדרות</a>
-        </div>
-        <div class="menu_box">
+        </section>
+        <section class="menu_box">
             <a href="#"><p class="far fa-question-circle"></p> עזרה</a>
-        </div>
-    </div>
+        </section>
+    </section>
     <section class="logo">שליח</section>
-    <section class="bread">מילוי פרטים <b class="breadSelect">></b> <div class="breadSelect">אימות פרטים</div> <b class="breadSelect">></b> חיפוש משלוח <b class="breadSelect">></b> סיום</section>
+    <section class="bread">מילוי פרטים <b class="breadSelect">></b> <section class="breadSelect">אימות פרטים</section> <b class="breadSelect">></b> חיפוש משלוח <b class="breadSelect">></b> סיום</section>
 </header>
 <main>
-    <div class="grayArea">?האם אלו הפרטים שהזנת</div>
-    <div class="mainSplice smallLineHieght">
+    <section class="grayArea">?האם אלו הפרטים שהזנת</section>
+    <section class="mainSplice smallLineHieght">
         <p><b>:שעות הפעילות שלך להיום הן <b class="far fa-clock"></b></p>
         <?php
         echo"<p> $_POST[timEnd] מ-$_POST[timeStart] עד</p>";
         ?>
 
-    </div>
-    <div class="imgSplice">
+    </section>
+    <section class="imgSplice">
         <p><b>:רדיוס השילוח הוא <b class="fas fa-truck"></b></p>
-        <div class="mapPic2">
+        <section class="mapPic2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3932.196357707349!2d34.80263487796807!3d32.12399897693614!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1531484901542" width="335" height="298" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-    </div>
+        </section>
+    </section>
     <form action="selectosend-sender.php" method="post">
     <input type="hidden" name="timeStart" id="timeStart"
             value="<?php echo $_POST['timeStart']?>">
