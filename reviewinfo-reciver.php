@@ -145,5 +145,3 @@
 </main>
 </body>
 </html>
-<?php
-?>
