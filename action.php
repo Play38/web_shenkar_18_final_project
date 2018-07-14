@@ -9,9 +9,13 @@ if(mysqli_connect_errno ()) {
         mysqli_connect_errno () . ")"
     );
 }
+if(!mysqli_set_charset($link, 'utf8')) {
+    echo 'the connection is not in utf8';
+    exit();
+}
 function generateRandomName() {
-    $fnames = array("Omer","Ofir","Dana","Jacob","Idan","Daniel","Max","Shahar","Shoham","Tomer","Lior","Miri","Lev","Natsu","Lucy","Gray","Nir","Sagi","Or","Neta","Noa","Sahar");
-    $lnames = array("Cohen","Guttman","Levi","Ben ari","Noodleman","Dekal","Rubinshtein","Lotan","Roditi","Kovalevski","Abir","Dragneel","Heartfilia","Fullbuster","Adler","Hadad","Granot","Richer","Eylon","Neviantsev","Gezer");
+    $fnames = array("עומר","אופיר","דנה","יעקב","עידן","דניאל","מקס","שחר","שוהם","תומר","ליאור","מירי","לב","נאטסו","לוסי","גריי","ניר","שגיא","אור","נטע","נועה","סהר");
+    $lnames = array("כהן","גוטמן","לוי","בן ארי","נודלמן","דקל","רובינשטיין","לוטן","רודיטי","קובלבסקי","אביר","דראגניל","הארטפיליה","פולבסטר","אדלר", "אלחדד","גרנות","רייכר","אילון","נביצוב","גזר");
     $randomName = '';
     $space = ' ';
     $randomName .= $fnames[mt_rand(0, count($fnames) - 1)];

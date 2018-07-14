@@ -10,6 +10,10 @@ if(mysqli_connect_errno ()) {
         mysqli_connect_errno () . ")"
     );
 }
+if(!mysqli_set_charset($link, 'utf8')) {
+    echo 'the connection is not in utf8';
+    exit();
+}
 $start=$_POST['timeStart'];
 $end =$_POST['timEnd'];
 $start=substr($start, 0, strpos($start, ":"));
