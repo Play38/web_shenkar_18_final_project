@@ -14,7 +14,7 @@ $start=$_POST['timeStart'];
 $end =$_POST['timEnd'];
 $start=substr($start, 0, strpos($start, ":"));
 $end=substr($end, 0, strpos($end, ":"));
-$query1 = "SELECT * FROM sender_list_204";
+$query1 = "SELECT * FROM sender_list_204 where ('time' >= $start and 'time' <= $end)" ;
     $result = mysqli_query($link, $query1);
     
     if(!$result) {
