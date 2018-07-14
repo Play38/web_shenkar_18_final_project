@@ -4,7 +4,7 @@
 	$dbpass = "stud18aDB1!" ;
     $dbname = "studDB18A" ;
 	$link = mysqli_connect ($dbhost, $dbuser, $dbpass, $dbname);
-	
+	$zeroRaws= 0;
 	if(mysqli_connect_errno ()) {
 		die("DB connection failed: " . mysqli_connect_error () . " (" .
 		mysqli_connect_errno () . ")"
@@ -142,8 +142,11 @@ $query1 = "SELECT * FROM `sender_list_204` WHERE $start <= time AND time <= $end
                                                 </section>
                                             </div>
                                         </div>" ;
-                                       
+                                        $zeroRaws++;
                                     }
+
+                                    if($zeroRaws == 0)
+                                        echo"test";
                                         mysqli_close($link);
             
         ?>
