@@ -144,11 +144,16 @@ $query1 = "SELECT * FROM `sender_list_204` WHERE $start <= time AND time <= $end
                                         </div>" ;
                                         $zeroRows++;
                                     }
-
                                     if($zeroRows == 0)
-                                        echo"test";
+                                    {
+                                        echo "<section class='failSender'>
+                                        <div class='fas fa-times'></div>
+                                        <h3>לא נמצאו משלוחים</h3>
+                                        <h3>אנא בחר שעות פעילות אחרות</h3>
+                                        </section>
+                                        <a href='getinfo-sender.html' class='prev'>חזור</a>";
+                                    }
                                         mysqli_close($link);
-            
         ?>
        </div>        
 		</main>

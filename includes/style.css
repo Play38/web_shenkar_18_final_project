@@ -450,6 +450,17 @@ iframe {
 	color:#14eb3f;
 	padding-bottom:10px;
 }
+.failSender {
+	position:relative;
+	text-align:center;
+	top:200px;
+
+}
+.failSender div {
+	font-size:100px;
+	color:#ff0000;
+	padding-bottom:10px;
+}
 /************** reciver 1*/
 .radio_rec {
 	display:inline;
