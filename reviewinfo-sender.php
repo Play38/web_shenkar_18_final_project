@@ -73,8 +73,8 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3932.196357707349!2d34.80263487796807!3d32.12399897693614!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1531484901542" width="335" height="298" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
-    <a href="sender.html" class="prev">חזור</a>
-    <a href="sender3.php" class="ok">כן</a>
+    <a href="getinfo-sender.html" class="prev">חזור</a>
+    <a href="selectosend-sender.php" class="ok">כן</a>
 </main>
 </body>
 </html>

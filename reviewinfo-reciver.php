@@ -142,7 +142,7 @@
             
                 <input id="button" type="submit" class="ok"></button>
             </form>
-            <a href="reciver.html" class="prev">חזור</a>
+            <a href="getinfo-reciver.html" class="prev">חזור</a>
 		</main>
 	</body>
 </html>

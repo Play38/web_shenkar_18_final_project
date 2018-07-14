@@ -30,7 +30,7 @@ $amount = $_POST[amount];
 $time= $_POST[time];
 $sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time','$price')";
 if(mysqli_query($link, $sql)){
-	header('Location: reciver3.html'); 
+	header('Location: finish-reciver.html');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

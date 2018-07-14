@@ -135,7 +135,7 @@ $query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";
                                             </div>
                                             <div class='contentBox approve'>
                                                 <section class='textInBoxApprove'>
-                                                    <a href='finishSender.html'>אשר</a>
+                                                    <a href='finish-sender.html'>אשר</a>
                                                 </section>
                                             </div>
                                         </div>" ;
