@@ -3,8 +3,6 @@
 	padding: 0px;
 	font-family: 'Alef', sans-serif;
 }
-#clear{clear: both;}
-
 .header_mobile {
 	position:relative;
 	background-color:#e6e6e6;
@@ -271,12 +269,12 @@ iframe {
 /********/
 .mapPic iframe {
 	position:relative;
-	top:20px;
+	top:-15px;
 }
 .rangeWidth {
 	position:relative;
 	width:335px;
-	margin-top:20px;
+	top:-15px;
 }
 .rangeCenter {text-align:center}
 
@@ -286,15 +284,11 @@ iframe {
 .mainSplice p {margin-right: 7.5%;}
 .imgSplice {
 	position:relative;
-	height:350px;
+	height:390px;
 	border: 1px solid #cccccc;
 	border-top:0px;
 	text-align:right;
 	line-height:50px;
-}
-.imgSplice p {
-	position: absolute;
-	right: 0px;
 }
 .ok {
 	top: 90%;
@@ -333,7 +327,7 @@ iframe {
 .imgSplice p{margin-right: 7.5%;}
 .mapPic2 iframe {
 	position:relative;
-	top:35px;
+	top:-20px;
 }
 @media screen and (max-width: 580px) {
 	.prev {left:50%;}

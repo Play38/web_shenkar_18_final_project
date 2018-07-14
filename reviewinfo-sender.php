@@ -61,24 +61,23 @@
 <main>
     <section class="grayArea">?האם אלו הפרטים שהזנת</section>
     <section class="mainSplice smallLineHieght">
-        <p><b>:שעות הפעילות שלך להיום הן <b class="far fa-clock"></b></p>
+        <p><b>:שעות הפעילות שלך להיום הן </b><b class="far fa-clock"></b></p>
         <?php
-        echo"<p> $_POST[timEnd] מ-$_POST[timeStart] עד</p>";
+        echo"<p><b> $_POST[timEnd] מ-$_POST[timeStart] עד<b></p/>";
         ?>
-
     </section>
     <section class="imgSplice">
-        <p><b>:רדיוס השילוח הוא <b class="fas fa-truck"></b></p>
+        <p><b>:רדיוס השילוח שלך הוא </b><b class="fas fa-truck"></b></p>
         <section class="mapPic2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3932.196357707349!2d34.80263487796807!3d32.12399897693614!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1531484901542" width="335" height="298" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
     </section>
     <form action="selectosend-sender.php" method="post">
-    <input type="hidden" name="timeStart" id="timeStart"
-            value="<?php echo $_POST['timeStart']?>">
-    <input type="hidden" name="timEnd" id="timEnd"
-            value="<?php echo $_POST['timEnd'] ?>">
-    <input id="button" type="submit" class="ok"></button>
+        <input type="hidden" name="timeStart" id="timeStart"
+               value="<?php echo $_POST['timeStart']?>">
+        <input type="hidden" name="timEnd" id="timEnd"
+               value="<?php echo $_POST['timEnd'] ?>">
+        <input id="button" type="submit" class="ok"></button>
     </form>
     <a href="getinfo-sender.html" class="prev">חזור</a>
 </main>
