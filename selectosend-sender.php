@@ -10,10 +10,11 @@
 		mysqli_connect_errno () . ")"
 );
 }
-
-$query1 = "SELECT * FROM sender_list_204 order by RAND() LIMIT 4";    
+$start=$_POST['timeStart'];
+$end =$_POST['timEnd'];
+$query1 = "SELECT * FROM `sender_list_204` WHERE"."('time'<="."$start".":00 or"."'time' >= "."$end".":00 )";    
     $result = mysqli_query($link, $query1);
-
+    
     if(!$result) {
         die('DB QUERY FAILED.');
     }

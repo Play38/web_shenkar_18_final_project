@@ -28,7 +28,7 @@ $weight = $_POST[weight];
 $breakable = $_POST[breakable];
 $amount = $_POST[amount];
 $time= $_POST[time];
-$sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$time','$price')";
+$sql = "INSERT INTO sender_list_204 VALUES ('$name', '$pickup', '$dest','$weight','$breakable','$amount','$price','$time')";
 if(mysqli_query($link, $sql)){
 	header('Location: finish-reciver.html');
 } else{

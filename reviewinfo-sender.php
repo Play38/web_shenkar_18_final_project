@@ -73,8 +73,14 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3932.196357707349!2d34.80263487796807!3d32.12399897693614!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1531484901542" width="335" height="298" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
+    <form action="selectosend-sender.php" method="post">
+    <input type="hidden" name="timeStart" id="timeStart"
+            value="<?php echo $_POST['timeStart']?>">
+    <input type="hidden" name="timEnd" id="timEnd"
+            value="<?php echo $_POST['timEnd'] ?>">
+    <input id="button" type="submit" class="ok"></button>
+    </form>
     <a href="getinfo-sender.html" class="prev">חזור</a>
-    <a href="selectosend-sender.php" class="ok">כן</a>
 </main>
 </body>
 </html>
