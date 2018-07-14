@@ -156,6 +156,6 @@ if(!$result) {
         ?>
     </section>
 </main>
-<script src="includes/js/main.js"></script>
+<script src="includes/main.js"></script>
 </body>
 </html>
