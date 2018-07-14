@@ -84,7 +84,7 @@ if(!$result) {
         <?php
         while($row = mysqli_fetch_assoc($result)){
             echo "<section id='senderList' class='mx-auto'>
-                <button class='collapsible menPic'>" . $row["name"] . "</button>
+                <button class='collapsible avatarPic'>" . $row["name"] . "</button>
                 <section class='content'>
                     <section class='contentBox'>
                         <section class='symbol fas fa-box'></section>

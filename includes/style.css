@@ -370,18 +370,12 @@ iframe {
 	height: 400px;
 }
 .SenderListWrapper {margin-top:30px;}
-.menPic {
-	background-image:url("../images/men.png");
+.avatarPic {
+	background-image:url("../images/user.png");
 	background-repeat: no-repeat;
 	background-position:right;
 	padding-right:50px;
 	background-position: right 10px bottom 10px;
-}
-.womenPic {
-	background-image:url("../images/women.png");
-	background-repeat: no-repeat;
-	background-position: right 10px bottom 10px;
-	padding-right:50px;
 }
 .contentBox {
 	position:relative;
