@@ -12,7 +12,9 @@
 }
 $start=$_POST['timeStart'];
 $end =$_POST['timEnd'];
-$query1 = "SELECT * FROM `sender_list_204` WHERE"."('time'<="."$start".":00 or"."'time' >= "."$end".":00 )";    
+$start=substr($start, 0, strpos($start, ":"));
+$end=substr($end, 0, strpos($end, ":"));
+$query1 = "SELECT * FROM sender_list_204";
     $result = mysqli_query($link, $query1);
     
     if(!$result) {
@@ -124,7 +126,7 @@ $query1 = "SELECT * FROM `sender_list_204` WHERE"."('time'<="."$start".":00 or".
                                             <div class='symbol far fa-clock'></div>
                                             <section class='textInBox2'>
                                                 <section>:שעת איסוף</section>
-                                                <section>" . $row["time"] . "</section>
+                                                <section>" . $row["time"] . ":00</section>
                                                 </section>
                                             </div>
                                             <div class='contentBox'>
